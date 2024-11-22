@@ -10,6 +10,7 @@ namespace CMCS_WebApplication.Controllers
     public class LecturerController : Controller
     {
         private readonly TableClient claimsTableClient;
+        Random rnd = new Random();
 
         public LecturerController(IConfiguration configuration)
         {
@@ -43,6 +44,8 @@ namespace CMCS_WebApplication.Controllers
 
         public async Task<IActionResult> SubmitClaim(Claim claim)
         {
+
+            //sets the Claim status to either accepted or rejected based on a set of min and max criteria
             if (ModelState.IsValid)
             {
 
@@ -55,10 +58,14 @@ namespace CMCS_WebApplication.Controllers
                     claim.Claim_Status = "Rejected";
                 }
 
+                //the automatic total payment calculator
                 claim.Final_Pay = claim.Hours_Worked * claim.Hourly_Rate;
 
-                claim.RowKey = Guid.NewGuid().ToString();
+                //generates a random Claim_ID
+                int randNum = rnd.Next(3, 100);
+                claim.Claim_ID = randNum;
 
+                //Adds the claim to the Claims table
                 await claimsTableClient.AddEntityAsync(claim);
 
                 return RedirectToAction("~Views/Home/ClaimSubmissionPage.cshtml", new { lecturerId = claim.Lecturer_ID });

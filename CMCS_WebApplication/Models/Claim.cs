@@ -3,6 +3,8 @@ using Azure.Data.Tables;
 
 namespace CMCS_WebApplication.Models
 {
+
+    //Code for representing the Claims table programatically (Azure-SDK bot and Zhu, 2024) + (Anderson et al, 2024)
     public class Claim : ITableEntity
     {
         public string PartitionKey { get; set; } 

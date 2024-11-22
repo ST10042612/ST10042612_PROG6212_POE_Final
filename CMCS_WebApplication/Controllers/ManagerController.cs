@@ -9,10 +9,11 @@ namespace CMCS_WebApplication.Controllers
 {
     public class ManagerController : Controller
     {
+        //variable declaration for TableClient objects to be used later for reading and writng to the claims and lecturers tables
         private readonly TableClient claimsTableClient;
         private readonly TableClient lecturersTableClient;
 
-
+        //Constructor
         public ManagerController(IConfiguration configuration)
         {
             var connectionString = configuration.GetConnectionString("AzureTableStorage");
@@ -26,6 +27,7 @@ namespace CMCS_WebApplication.Controllers
             return View("~Views/Home/Index.cshtml");
         }
         
+        //Fetches all the Claims from the Claims table in order for them to be shown later on
         public async Task<IActionResult> ViewAllClaims()
         {
             var claims = new List<Claim>();
@@ -37,6 +39,7 @@ namespace CMCS_WebApplication.Controllers
             return View(claims);
         }
 
+        //Fetches all claims with the status of approved in order to show them
         public async Task<IActionResult> ViewApprovedClaims()
         {
             var claims = new List<Claim>();
@@ -52,6 +55,7 @@ namespace CMCS_WebApplication.Controllers
             return View(claims);
         }
 
+        //Fetches all the Lecturers from the Lecturers Table in order for the entries to be viewed/edited later on
         public async Task<IActionResult> EditLecturers()
         {
             var lecturers = new List<Lecturer>();

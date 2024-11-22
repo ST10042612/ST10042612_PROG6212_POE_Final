@@ -12,10 +12,10 @@ namespace CMCS_WebApplication.Controllers
 
         public HomeController(IConfiguration configuration)
         {
-            // Get connection string from appsettings.json
+            // Gets the connection string from appsettings.json
             var connectionStr = configuration.GetConnectionString("AzureTableStorage");
 
-            // Initialize the TableClient for Claims and Lecturers
+            // Initializes the TableClient for the Claims and Lecturers tables
             var serviceClient = new TableServiceClient(connectionStr);
             claimsTableClient = serviceClient.GetTableClient("Claims");
             lecturersTableClient = serviceClient.GetTableClient("Lecturers");
@@ -25,7 +25,7 @@ namespace CMCS_WebApplication.Controllers
         {
             return View();
         }
-
+        
         public IActionResult Lecturer()
         {
             return View("~/Views/Home/ClaimSubmissionPage.cshtml");
