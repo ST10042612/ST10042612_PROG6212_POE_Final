@@ -7,6 +7,7 @@ namespace CMCS_WebApplication.Controllers
 {
     public class HomeController : Controller
     {
+        //variable declaration for the Table client Objects that will be used to read/write data fron their respective tables
         private readonly TableClient claimsTableClient;
         private readonly TableClient lecturersTableClient;
 

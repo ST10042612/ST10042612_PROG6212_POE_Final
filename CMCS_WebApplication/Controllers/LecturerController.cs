@@ -9,9 +9,12 @@ namespace CMCS_WebApplication.Controllers
 {
     public class LecturerController : Controller
     {
+        //variable declaration for the Table client Objects that will be used to read/write data fron their respective tables
         private readonly TableClient claimsTableClient;
-        Random rnd = new Random();
 
+        Random rnd = new Random(); //Used to generate a random number later on
+
+        //Constructor
         public LecturerController(IConfiguration configuration)
         {
             var connectionString = configuration.GetConnectionString("AzureTableStorage");
