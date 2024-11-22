@@ -6,7 +6,8 @@
 
 <h2>Submit a New Claim</h2>
 
-<form method="post">
+<!--Form for claim submission, will prevent a claim from being made if the fields arnt filled or filled by numbers-->
+<form method="post" class="form-style">
     <div class="form-group">
         <label for="Hours_Worked">Hours Worked</label>
         <input type="number" class="form-control" id="Hours_Worked" name="Hours_Worked" required />
@@ -15,5 +16,35 @@
         <label for="Hourly_Rate">Hourly Rate</label>
         <input type="number" class="form-control" id="Hourly_Rate" name="Hourly_Rate" required />
     </div>
-    <button type="submit" class="btn btn-primary">Submit Claim</button>
+    <button type="submit" class="btn-lg">Submit Claim</button>
 </form>
+
+<style>
+
+    .container {
+        max-width: 600px; 
+        margin: 0 auto; 
+    }
+
+    .form-style {
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .btn-lg {
+        padding: 12px 20px;
+        font-size: 18px;
+    }
+
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+</style>
