@@ -8,8 +8,8 @@
 <h2>All Claims</h2>
 
 <!--Table that will be used to display claims data-->
-<table class="table">
-    <thead>
+<table class="table table-bordered table-hover">
+    <thead class="header-dark">
         <tr>
             <th>Claim ID</th>
             <th>Lecturer ID</th>
@@ -35,3 +35,37 @@
         }
     </tbody>
 </table>
+
+<style>
+
+    .table {
+        width: 100%; 
+        border-collapse: collapse; 
+    }
+
+    .header-dark {
+        background-color: #343a40; 
+        color: white; 
+        font-weight: bold; 
+    }
+
+    .table {
+        margin-bottom: 20px;
+    }
+
+    .table td, .table th {
+        padding: 12px 15px; 
+        text-align: center; 
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: #f1f1f1; 
+        cursor: pointer; 
+    }
+
+    .table-bordered {
+        border: 1px solid #ddd; 
+    }
+
+
+</style>

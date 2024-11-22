@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Mjpae\\source\\repos\\CMCS_WebApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{846B98D4-14B1-44BF-B822-5FE985534DBD}|CMCS_WebApplication\\CMCS_WebApplication.csproj|c:\\users\\mjpae\\source\\repos\\cmcs_webapplication\\cmcs_webapplication\\views\\home\\claimsubmissionpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{846B98D4-14B1-44BF-B822-5FE985534DBD}|CMCS_WebApplication\\CMCS_WebApplication.csproj|solutionrelative:cmcs_webapplication\\views\\home\\claimsubmissionpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{846B98D4-14B1-44BF-B822-5FE985534DBD}|CMCS_WebApplication\\CMCS_WebApplication.csproj|c:\\users\\mjpae\\source\\repos\\cmcs_webapplication\\cmcs_webapplication\\views\\home\\claimlistpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{846B98D4-14B1-44BF-B822-5FE985534DBD}|CMCS_WebApplication\\CMCS_WebApplication.csproj|solutionrelative:cmcs_webapplication\\views\\home\\claimlistpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{846B98D4-14B1-44BF-B822-5FE985534DBD}|CMCS_WebApplication\\CMCS_WebApplication.csproj|c:\\users\\mjpae\\source\\repos\\cmcs_webapplication\\cmcs_webapplication\\views\\home\\claimsubmissionpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{846B98D4-14B1-44BF-B822-5FE985534DBD}|CMCS_WebApplication\\CMCS_WebApplication.csproj|solutionrelative:cmcs_webapplication\\views\\home\\claimsubmissionpage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{846B98D4-14B1-44BF-B822-5FE985534DBD}|CMCS_WebApplication\\CMCS_WebApplication.csproj|c:\\users\\mjpae\\source\\repos\\cmcs_webapplication\\cmcs_webapplication\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -58,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 407,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -86,26 +86,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ClaimListPage.cshtml",
               "DocumentMoniker": "C:\\Users\\Mjpae\\source\\repos\\CMCS_WebApplication\\CMCS_WebApplication\\Views\\Home\\ClaimListPage.cshtml",
               "RelativeDocumentMoniker": "CMCS_WebApplication\\Views\\Home\\ClaimListPage.cshtml",
               "ToolTip": "C:\\Users\\Mjpae\\source\\repos\\CMCS_WebApplication\\CMCS_WebApplication\\Views\\Home\\ClaimListPage.cshtml",
               "RelativeToolTip": "CMCS_WebApplication\\Views\\Home\\ClaimListPage.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAQAAAAkAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABgAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-22T05:25:57.075Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ClaimSubmissionPage.cshtml",
               "DocumentMoniker": "C:\\Users\\Mjpae\\source\\repos\\CMCS_WebApplication\\CMCS_WebApplication\\Views\\Home\\ClaimSubmissionPage.cshtml",
               "RelativeDocumentMoniker": "CMCS_WebApplication\\Views\\Home\\ClaimSubmissionPage.cshtml",
               "ToolTip": "C:\\Users\\Mjpae\\source\\repos\\CMCS_WebApplication\\CMCS_WebApplication\\Views\\Home\\ClaimSubmissionPage.cshtml",
               "RelativeToolTip": "CMCS_WebApplication\\Views\\Home\\ClaimSubmissionPage.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAQAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-22T05:24:44.321Z",
               "EditorCaption": ""
@@ -120,8 +120,7 @@
               "RelativeToolTip": "CMCS_WebApplication\\Views\\Home\\Index.cshtml",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-22T04:00:18.191Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T04:00:18.191Z"
             },
             {
               "$type": "Document",
