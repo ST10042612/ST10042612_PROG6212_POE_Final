@@ -2,7 +2,37 @@
     ViewData["Title"] = "HomePage";
 }
 
-<h1>Welcome to the Claim Management System</h1>
-
-<button onclick="location.href='@Url.Action("Lecturer", "Home")'">Lecturer</button>
-<button onclick="location.href='@Url.Action("Manager", "Home")'">Manager</button>
+<div class="container">
+    <h2>What is Your Role?</h2>
+    <div class="row">
+        <!-- Button for lecturers -->
+        <div class="col">
+            <a href="@Url.Action("Lecturer", "Home")" class="btn btn-primary btn-lg">Lecturer</a>
+        </div>
+        <!-- Button for managers -->
+        <div class="col">
+            <a href="@Url.Action("Manager", "Home")" class="btn btn-success btn-lg">Manager</a>
+        </div>
+    </div>
+</div>
+ <!-- Visual styling for the page -->
+<style>
+    .container {
+        margin-top: 50px;
+    }
+    .row {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        padding: 100px;
+    }
+    .btn {
+        width: 400px;
+        height: 120px;
+    }
+    .btn-lg {
+        padding: 20px;
+        font-size: 45px;
+        border-radius: 10px;
+    }
+</style>

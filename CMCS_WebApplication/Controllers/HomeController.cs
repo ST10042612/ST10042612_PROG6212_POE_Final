@@ -28,11 +28,11 @@ namespace CMCS_WebApplication.Controllers
 
         public IActionResult Lecturer()
         {
-            return View();
+            return View("~/Views/Home/ClaimSubmissionPage.cshtml");
         }
         public IActionResult Manager()
         {
-            return View();
+            return View("~/Views/Home/ClaimListPage.cshtml");
         }
 
     }

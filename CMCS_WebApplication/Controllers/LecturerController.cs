@@ -3,6 +3,7 @@ using Azure.Data.Tables;
 using CMCS_WebApplication.Models;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.ViewEngines;
 
 namespace CMCS_WebApplication.Controllers
 {
@@ -37,7 +38,7 @@ namespace CMCS_WebApplication.Controllers
 
         public IActionResult SubmitClaim()
         {
-            return View();
+            return View("~Views/Home/ClaimSubmissionPage.cshtml");
         }
 
         public async Task<IActionResult> SubmitClaim(Claim claim)
@@ -60,10 +61,10 @@ namespace CMCS_WebApplication.Controllers
 
                 await claimsTableClient.AddEntityAsync(claim);
 
-                return RedirectToAction("", new { lecturerId = claim.Lecturer_ID });
+                return RedirectToAction("~Views/Home/ClaimSubmissionPage.cshtml", new { lecturerId = claim.Lecturer_ID });
             }
 
-            return View();
+            return View("~Views / Home / ClaimSubmissionPage.cshtml");
         }
     }
 }

@@ -23,9 +23,9 @@ namespace CMCS_WebApplication.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return View("~Views/Home/Index.cshtml");
         }
-
+        
         public async Task<IActionResult> ViewAllClaims()
         {
             var claims = new List<Claim>();
@@ -62,6 +62,8 @@ namespace CMCS_WebApplication.Controllers
 
             return View(lecturers);
         }
+
+        
     }
 }
 
