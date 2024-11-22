@@ -1,7 +1,7 @@
 ﻿using Azure;
 using Azure.Data.Tables;
 
-namespace ClaimsApp.Models
+namespace CMCS_WebApplication.Models
 {
     public class Lecturer : ITableEntity
     {

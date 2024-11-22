@@ -1,7 +1,7 @@
 ﻿using Azure;
 using Azure.Data.Tables;
 
-namespace ClaimsApp.Models
+namespace CMCS_WebApplication.Models
 {
     public class Claim : ITableEntity
     {
@@ -12,7 +12,7 @@ namespace ClaimsApp.Models
         public decimal Hours_Worked { get; set; }
         public decimal Hourly_Rate { get; set; }
         public string Claim_Status { get; set; }
-        public decimal FinalPay { get; set; }
+        public decimal Final_Pay { get; set; }
         public DateTimeOffset? Timestamp { get; set; }
         public ETag ETag { get; set; }
     }
