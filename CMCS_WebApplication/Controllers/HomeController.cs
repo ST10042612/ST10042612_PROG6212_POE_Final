@@ -13,7 +13,7 @@ namespace CMCS_WebApplication.Controllers
         public HomeController(IConfiguration configuration)
         {
             // Get connection string from appsettings.json
-            var connectionStr = configuration.GetConnectionString("");
+            var connectionStr = configuration.GetConnectionString("AzureTableStorage");
 
             // Initialize the TableClient for Claims and Lecturers
             var serviceClient = new TableServiceClient(connectionStr);

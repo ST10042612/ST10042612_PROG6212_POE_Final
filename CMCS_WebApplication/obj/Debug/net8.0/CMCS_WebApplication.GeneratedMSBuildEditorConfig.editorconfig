@@ -18,6 +18,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Mjpae\source\repos\CMCS_WebApplication\CMCS_WebApplication
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Mjpae/source/repos/CMCS_WebApplication/CMCS_WebApplication/Views/Home/ClaimListPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDbGFpbUxpc3RQYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Mjpae/source/repos/CMCS_WebApplication/CMCS_WebApplication/Views/Home/ClaimSubmissionPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDbGFpbVN1Ym1pc3Npb25QYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Mjpae/source/repos/CMCS_WebApplication/CMCS_WebApplication/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

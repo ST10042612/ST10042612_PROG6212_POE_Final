@@ -1,0 +1,33 @@
+﻿@model IEnumerable<CMCS_WebApplication.Models.Claim>
+
+@{
+    ViewData["Title"] = "ClaimList";
+}
+
+<h2>All Claims</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Claim ID</th>
+            <th>Lecturer ID</th>
+            <th>Hours Worked</th>
+            <th>Hourly Rate</th>
+            <th>Claim Status</th>
+            <th>Final Pay</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var claim in Model)
+        {
+            <tr>
+                <td>@claim.RowKey</td>
+                <td>@claim.Lecturer_ID</td>
+                <td>@claim.Hours_Worked</td>
+                <td>@claim.Hourly_Rate</td>
+                <td>@claim.Claim_Status</td>
+                <td>@claim.Final_Pay</td>
+            </tr>
+        }
+    </tbody>
+</table>

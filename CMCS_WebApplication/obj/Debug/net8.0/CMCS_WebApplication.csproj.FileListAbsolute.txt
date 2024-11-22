@@ -1,0 +1,9 @@
+C:\Users\Mjpae\source\repos\CMCS_WebApplication\CMCS_WebApplication\obj\Debug\net8.0\CMCS_WebApplication.csproj.AssemblyReference.cache
+C:\Users\Mjpae\source\repos\CMCS_WebApplication\CMCS_WebApplication\obj\Debug\net8.0\CMCS_WebApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mjpae\source\repos\CMCS_WebApplication\CMCS_WebApplication\obj\Debug\net8.0\CMCS_WebApplication.AssemblyInfoInputs.cache
+C:\Users\Mjpae\source\repos\CMCS_WebApplication\CMCS_WebApplication\obj\Debug\net8.0\CMCS_WebApplication.AssemblyInfo.cs
+C:\Users\Mjpae\source\repos\CMCS_WebApplication\CMCS_WebApplication\obj\Debug\net8.0\CMCS_WebApplication.csproj.CoreCompileInputs.cache
+C:\Users\Mjpae\source\repos\CMCS_WebApplication\CMCS_WebApplication\obj\Debug\net8.0\CMCS_WebApplication.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Mjpae\source\repos\CMCS_WebApplication\CMCS_WebApplication\obj\Debug\net8.0\CMCS_WebApplication.RazorAssemblyInfo.cache
+C:\Users\Mjpae\source\repos\CMCS_WebApplication\CMCS_WebApplication\obj\Debug\net8.0\CMCS_WebApplication.RazorAssemblyInfo.cs
+C:\Users\Mjpae\source\repos\CMCS_WebApplication\CMCS_WebApplication\obj\Debug\net8.0\CMCS_WebApplication.sourcelink.json

@@ -12,7 +12,7 @@ namespace CMCS_WebApplication.Controllers
 
         public LecturerController(IConfiguration configuration)
         {
-            var connectionString = configuration.GetConnectionString("");
+            var connectionString = configuration.GetConnectionString("AzureTableStorage");
             var serviceClient = new TableServiceClient(connectionString);
             claimsTableClient = serviceClient.GetTableClient("Claims");
         }

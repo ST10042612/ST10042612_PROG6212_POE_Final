@@ -1,0 +1,19 @@
+﻿@model CMCS_WebApplication.Models.Claim
+
+@{
+    ViewData["Title"] = "ClaimSubmission";
+}
+
+<h2>Submit a New Claim</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="Hours_Worked">Hours Worked</label>
+        <input type="number" class="form-control" id="Hours_Worked" name="Hours_Worked" required />
+    </div>
+    <div class="form-group">
+        <label for="Hourly_Rate">Hourly Rate</label>
+        <input type="number" class="form-control" id="Hourly_Rate" name="Hourly_Rate" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit Claim</button>
+</form>
