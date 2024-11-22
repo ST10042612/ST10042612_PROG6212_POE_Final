@@ -1,3 +1,4 @@
+using Azure.Data.Tables;
 using CMCS_WebApplication.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -6,11 +7,18 @@ namespace CMCS_WebApplication.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly TableClient claimsTableClient;
+        private readonly TableClient lecturersTableClient;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IConfiguration configuration)
         {
-            _logger = logger;
+            // Get connection string from appsettings.json
+            var connectionStr = configuration.GetConnectionString("");
+
+            // Initialize the TableClient for Claims and Lecturers
+            var serviceClient = new TableServiceClient(connectionStr);
+            claimsTableClient = serviceClient.GetTableClient("Claims");
+            lecturersTableClient = serviceClient.GetTableClient("Lecturers");
         }
 
         public IActionResult Index()
@@ -18,15 +26,14 @@ namespace CMCS_WebApplication.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Lecturer()
+        {
+            return View();
+        }
+        public IActionResult Manager()
         {
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }
