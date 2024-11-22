@@ -5,19 +5,23 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.ViewEngines;
 
+//Help with the creation and set up of the controllers: (Anderson, 2024) and (TutorialsPoint, n.d.)
 namespace CMCS_WebApplication.Controllers
 {
     public class LecturerController : Controller
     {
-        //variable declaration for the Table client Objects that will be used to read/write data fron their respective tables
+        //variable declaration for the Table client Objects that will be used to read/write data fron their respective tables (Azure-SDK bot and Zhu, 2024)
         private readonly TableClient claimsTableClient;
 
         Random rnd = new Random(); //Used to generate a random number later on
 
-        //Constructor
+        //Constructor (Azure-SDK bot and Zhu, 2024)
         public LecturerController(IConfiguration configuration)
         {
+            // Gets the connection string from appsettings.json
             var connectionString = configuration.GetConnectionString("AzureTableStorage");
+
+            // Initializes the TableClient for the Claims table
             var serviceClient = new TableServiceClient(connectionString);
             claimsTableClient = serviceClient.GetTableClient("Claims");
         }
@@ -75,6 +79,7 @@ namespace CMCS_WebApplication.Controllers
             }
 
             return View("~Views / Home / ClaimSubmissionPage.cshtml");
+
         }
     }
 }

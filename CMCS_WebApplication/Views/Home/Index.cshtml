@@ -2,21 +2,23 @@
     ViewData["Title"] = "HomePage";
 }
 
+<!--Help with learning and understanding the HTML and CSS on this page: (W3Schools, n.d.)-->
+
 <div class="container">
-    <h2>What is Your Role?</h2>
+    <h2><center>What is Your Role?</h2>
     <div class="row">
         <!-- Button for lecturers -->
         <div class="col">
-            <a href="@Url.Action("Lecturer", "Home")" class="btn btn-primary btn-lg">Lecturer</a>
+            <a href="@Url.Action("Lecturer", "Home")" class="btn lecturer-btn btn-txt">Lecturer</a>
         </div>
         <!-- Button for managers -->
         <div class="col">
-            <a href="@Url.Action("Manager", "Home")" class="btn btn-success btn-lg">Manager</a>
+            <a href="@Url.Action("Manager", "Home")" class="btn manager-btn btn-txt">Manager</a>
         </div>
     </div>
 </div>
 
- <!-- Visual styling for the page -->
+<!--styling for the home page (W3Schools, n.d.)-->
 <style>
     .container {
         margin-top: 50px;
@@ -25,13 +27,24 @@
         display: flex;
         justify-content: center;
         gap: 50px;
-        padding: 100px;
+        padding: 190px;
     }
     .btn {
         width: 400px;
         height: 120px;
     }
-    .btn-lg {
+
+    .lecturer-btn{
+        background-color: green;
+        color: white;
+    }
+
+    .manager-btn {
+        background-color: darkblue;
+        color: white;
+    }
+
+    .btn-txt {
         padding: 20px;
         font-size: 45px;
         border-radius: 10px;

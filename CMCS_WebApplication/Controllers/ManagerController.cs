@@ -4,19 +4,22 @@ using CMCS_WebApplication.Models;
 using System.Linq;
 using System.Threading.Tasks;
 
-
+//Help with the creation and set up of the controllers: (Anderson, 2024) and (TutorialsPoint, n.d.)
 namespace CMCS_WebApplication.Controllers
 {
     public class ManagerController : Controller
     {
-        //variable declaration for TableClient objects to be used later for reading and writng to the claims and lecturers tables
+        //variable declaration for TableClient objects to be used later for reading and writng to the claims and lecturers tables (Azure-SDK bot and Zhu, 2024)
         private readonly TableClient claimsTableClient;
         private readonly TableClient lecturersTableClient;
 
-        //Constructor
+        //Constructor (Azure-SDK bot and Zhu, 2024)
         public ManagerController(IConfiguration configuration)
         {
+            // Gets the connection string from appsettings.json
             var connectionString = configuration.GetConnectionString("AzureTableStorage");
+
+            // Initializes the TableClient for the Claims and Lecturers tables
             var serviceClient = new TableServiceClient(connectionString);
             claimsTableClient = serviceClient.GetTableClient("Claims");
             lecturersTableClient = serviceClient.GetTableClient("Lecturers");
@@ -66,7 +69,6 @@ namespace CMCS_WebApplication.Controllers
 
             return View(lecturers);
         }
-
         
     }
 }

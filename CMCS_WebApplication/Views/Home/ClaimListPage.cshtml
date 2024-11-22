@@ -5,7 +5,9 @@
     ViewData["Title"] = "ClaimList";
 }
 
-<h2>All Claims</h2>
+<!--Help with learning and understanding the HTML and CSS on this page: (W3Schools, n.d.)-->
+
+<h2 style="padding:50px;"><center>All Claims</h2>
 
 <!--Table that will be used to display claims data-->
 <table class="table table-bordered table-hover">
@@ -22,7 +24,7 @@
     
     <tbody>
         <!--Loops through every claim from the Claim Model and displays them-->
-        @foreach (var claim in Model)
+        @foreach (var claim in Model) //Code for foreach loop (W3Schools)
         {
             <tr>
                 <td>@claim.RowKey</td>
@@ -36,6 +38,7 @@
     </tbody>
 </table>
 
+<!--Styling for the View Claims page (W3Schools, n.d.)-->
 <style>
 
     .table {

@@ -4,21 +4,28 @@
     ViewData["Title"] = "ClaimSubmission";
 }
 
-<h2>Submit a New Claim</h2>
+<!--Help with learning and understanding the HTML and CSS on this page: (W3Schools, n.d.)-->
 
-<!--Form for claim submission, will prevent a claim from being made if the fields arnt filled or filled by numbers-->
+<h2><center>Submit a New Claim</h2>
+
+<!--Form for claim submission, will prevent a claim from being made if the fields arnt filled or filled by numbers, also will prevent form submission if no file has been selected-->
 <form method="post" class="form-style">
-    <div class="form-group">
-        <label for="Hours_Worked">Hours Worked</label>
-        <input type="number" class="form-control" id="Hours_Worked" name="Hours_Worked" required />
-    </div>
-    <div class="form-group">
-        <label for="Hourly_Rate">Hourly Rate</label>
-        <input type="number" class="form-control" id="Hourly_Rate" name="Hourly_Rate" required />
-    </div>
+    <label for="hours">Lecturer ID:</label>
+    <input name="lecturerID" id="LecturerID" required><br><br>
+
+    <label for="hours">Hours Worked:</label>
+    <input type="number" id="hrswrk" name="hoursWorked" required><br><br>
+
+    <label for="wages">Hourly Rate:</label>
+    <input type="number" id="hrlyrate" name="hourlyRate" required><br><br>
+
+    <label for="file">Select File (e.g., documents):</label>
+    <input type="file" id="file" name="file" class="hidden" required><br><br>
+
     <button type="submit" class="btn-lg">Submit Claim</button>
 </form>
 
+<!--Styling for the Claim submission page (W3Schools, n.d.)-->
 <style>
     .container {
         max-width: 600px; 
@@ -26,7 +33,7 @@
     }
 
     .form-style {
-        background-color: #ffffff;
+        background-color: lightblue;
         padding: 30px;
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -39,6 +46,7 @@
     .btn-lg {
         padding: 12px 20px;
         font-size: 18px;
+        background-color: lightgreen;
     }
 
 
